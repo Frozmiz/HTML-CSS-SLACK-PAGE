@@ -6,15 +6,32 @@
 html, body,.root {
     height: 100%;
     margin: 0;
-    padding: 0;
     font-family: sans-serif;
   }
   
   
   .header {
-    height: 200px;
-    padding-left: 18px;
+    padding: 18px;
     background-color: blueviolet;
+
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-signup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-image {
+        background-image: url(https://picsum.photos/200/300);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 200px;
+    }
+
   }
 
   .trust{
@@ -22,7 +39,22 @@ html, body,.root {
     background-color: #F4EDE3;
   }
 
-  .stadistics {
+  .testimonials {
     height: 200px;
     background-color: #FFFFFF;
+  }
+
+  .features {
+    height: 200px;
+    background-color: #fff4f4;
+  }
+
+  .call {
+    height: 200px;
+    background-color: #FFFFFF;
+  }
+
+  .footer {
+    height: 200px;
+    background-color: blueviolet;
   }

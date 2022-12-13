@@ -2,34 +2,53 @@
   box-sizing: border-box;
 }
 
-a {
-  color: aliceblue;
-}
-
-html, body {
+html, body, .root {
+  height: 100%;
   margin: 0;
-  padding: 0;
   font-family: sans-serif;
 }
 
-.nav {
-  width: 100%;
-  background-color: rgb(88, 7, 92);
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  padding: 16px;
-}
-.nav-left, .nav-right {
-  display: flex;
-  gap: 16px;
-}
-
 .header {
+  padding: 18px;
   background-color: blueviolet;
 }
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header-signup {
+  display: flex;
+  flex-direction: column;
+}
+.header-image {
+  background-image: url(https://picsum.photos/200/300);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}
 
-.header-items .header-item {
-  margin-top: 0px;
-  margin-bottom: 5px;
+.trust {
+  height: 200px;
+  background-color: #F4EDE3;
+}
+
+.testimonials {
+  height: 200px;
+  background-color: #FFFFFF;
+}
+
+.features {
+  height: 200px;
+  background-color: #fff4f4;
+}
+
+.call {
+  height: 200px;
+  background-color: #FFFFFF;
+}
+
+.footer {
+  height: 200px;
+  background-color: blueviolet;
 }/*# sourceMappingURL=styles.css.map */
