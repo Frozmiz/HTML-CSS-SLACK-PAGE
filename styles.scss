@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+html, body,.root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  
+  .header {
+    height: 200px;
+    padding-left: 18px;
+    background-color: blueviolet;
+  }
+
+  .trust{
+    height: 200px;
+    background-color: #F4EDE3;
+  }
+
+  .stadistics {
+    height: 200px;
+    background-color: #FFFFFF;
+  }

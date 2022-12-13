@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: aliceblue;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.nav {
+  width: 100%;
+  background-color: rgb(88, 7, 92);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.nav-left, .nav-right {
+  display: flex;
+  gap: 16px;
+}
+
+.header {
+  background-color: blueviolet;
+}
+
+.header-items .header-item {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=styles.css.map */
