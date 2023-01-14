@@ -1,72 +1,212 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  
-html, body,.root {
-    height: 100%;
-    margin: 0;
-    font-family: sans-serif;
-  }
-  
-  
-  .header {
-    padding: 18px;
-    background-color: #541554;
+  box-sizing: border-box;
+}
 
-    &-nav {
-        display: flex;
-        justify-content: space-between;
+html,
+body,
+.root {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  background-color: #4a154b;
+  font-family: Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+  // height: 0;
+
+  &-title {
+    color: #ffffff;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+
+
+  &-title-span {
+      color: #ECB22E;
+      font-size: 40px;
     }
 
-    &-signup {
-        display: flex;
-        flex-direction: column;
-    }
+  &-nav-div {
+    display: flex;
+    align-items:center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    border-left: 20px;
+    margin-right: 10%;
+    align-items: center;
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+  }
 
-    &-image {
-        background-image: url(https://picsum.photos/200/300);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 200px;
-    }
+  &-nav-logo {
+    display: flex;
+    margin: 30px;
+  }
+
+  &-nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
+
+  &-nav-menu-menu {
+    display: flex;
+    margin: 30px;
+    object-fit: cover;
+    width: 20%;
+  
 
   }
 
-  .trust{
-    height: 1100px;
-    background-color: #F4EDE4;
+  &-nav {
+    display: flex;
+    justify-content: space-between;
   }
 
-  .testimonials {
-    height: 700px;
-    background-color: #FFFFFF;
+  &-signup {
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
   }
 
-  .features {
-    height: 200px;
-    background-color: #F4EDE4;
+  &-signup-button1 {
+    background-color: #fff;
+    color: #611f69;
+    fill: #611f69;
+    box-shadow: inset 0 0 0 1px #611f69;
+    appearance: none;
+    
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI",
+      Tahoma, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.2857;
+    letter-spacing: 0.8px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 19px 70px 20px;
+    display: block;
+    margin-bottom: 2%;
+    
   }
 
-  .call {
-    height: 200px;
-    background-color: #4A154B;
+  &-signup-button2 {
+    
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 19px 77px 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #4285f4;
+    color: #fff;
+    position: relative;
+    font-size: calc(.875rem + (0 * (100vw - 400px)/ 624));
+    cursor: pointer;
   }
 
-  .footer {
-    height: 200px;
-    background-color: #FFFFFF;
-  }
-
-  .video-testimonial {
+  &-video {
     display: flex;
     justify-content: center;
-    max-width: 100%;
-    height: 10px;
   }
 
-  video {
+  &-video-video {
+    display: inline-block;
+    vertical-align: baseline;
     object-fit: contain;
-    height: 200px;
+    width: 100%;
+    height: 100%;
   }
+}
+
+.trust {
+  height: 1100px;
+  background-color: #f4ede4;
+}
+
+.testimonials {
+  height: 700px;
+  background-color: #ffffff;
+}
+
+.features {
+  height: 200px;
+  background-color: #f4ede4;
+}
+
+.call {
+  height: 200px;
+  background-color: #4a154b;
+}
+
+.footer {
+  height: 200px;
+  background-color: #ffffff;
+}
+
+.video-testimonials {
+  border-radius: 50px;
+  position: relative;
+  width: 90%;
+  height: 0;
+  padding-bottom: 50%;
+}
+
+.video-testimonials video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+  cursor: pointer;
+}
+
+.testimonials-text {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.span-casos-clientes {
+  padding-top: 1rem;
+}
+
+.casos-clientes {
+  width: 100%;
+  margin: 10px 0px 0px;
+}
+
+.promedio {
+  padding: 20px;
+  margin: 50px;
+  display: block;
+}
+.p-promedio {
+  color: #696969;
+  text-align: center;
+  font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI",
+    Tahoma, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.2857;
+  letter-spacing: normal;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem !important;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
