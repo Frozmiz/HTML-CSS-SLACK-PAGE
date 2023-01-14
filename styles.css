@@ -29,12 +29,12 @@ html, body, .root {
 }
 
 .trust {
-  height: 500px;
+  height: 1100px;
   background-color: #F4EDE4;
 }
 
 .testimonials {
-  height: 200px;
+  height: 700px;
   background-color: #FFFFFF;
 }
 
@@ -51,4 +51,17 @@ html, body, .root {
 .footer {
   height: 200px;
   background-color: #FFFFFF;
+}
+
+.video-testimonial {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  height: 10px;
+}
+
+video {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 200px;
 }/*# sourceMappingURL=styles.css.map */
